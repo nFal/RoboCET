@@ -1,0 +1,2 @@
+-> This directory contains a collection of various lua scripts for nodemcu
+-> use luatool.py to burn to ESP: ./luatool.py --port /dev/ttyUSB0 --src your_lua_file.lua --dest your_lua_file.lua --verbose

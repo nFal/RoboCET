@@ -1,0 +1,4 @@
+-> This directory contains binary of nodemcu firmware.
+-> The binary was built against the master branch (as on 2017-Feb-24) and includes the following modules: adc, bit, cjson, coap, cron, crypto, dht, file, gpio, http, i2c, mdns, mqtt, net, node, pcm, pwm, sntp, spi, tmr, uart, websocket, wifi.
+-> To burn the firmware to ESP12E (4MB flash memory size) module, use the command: esptool.py --port /dev/ttyUSB0 write_flash -fm dio -fs 32m 0x00000 nodemcu-master-23-modules-2017-02-24-08-25-23-float.bin 0x3fc000 esp_init_data_default.bin 
+Instead of /dev/ttyUSB0, use the port where you connected the ESP. Also, the address 0x3fc000 is for 4MB flash size module (ESP12E). See: https://nodemcu.readthedocs.io/en/master/en/flash/ for more information.
